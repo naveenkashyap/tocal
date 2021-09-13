@@ -1,0 +1,8 @@
+name: Update Notion Ticket 
+on: pull-request
+jobs:
+  update_notion_ticket:
+    runs-on: macos-latest
+    steps:
+      - name: Step 1
+        run: echo ls -al

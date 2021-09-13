@@ -1,6 +1,7 @@
+from abc import abstractproperty
 from typing import Iterable, Tuple
 
-from tocal.event import Event
+from .event import Event
 
 import heapq
 import datetime
@@ -45,6 +46,7 @@ class Calendar:
         return self.__str__()
     
     def __str__(self):
-        ret = f"Calendar: {self.owner}\n\n"
-        ret += '\n'.join([repr(event) for event in self.events])
+        ret = f"Calendar:"
+        for event in self.events:
+            ret += f'\n{event}'
         return ret

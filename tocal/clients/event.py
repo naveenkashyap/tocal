@@ -1,6 +1,6 @@
 from abc import ABC
 
-from tocal.todo import TodoItem
+from .todo import TodoItem
 
 import datetime
 
