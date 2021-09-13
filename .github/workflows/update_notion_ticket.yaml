@@ -1,5 +1,5 @@
 name: Update Notion Ticket 
-on: pull_request
+on: push
 jobs:
   update_notion_ticket:
     runs-on: macos-latest
