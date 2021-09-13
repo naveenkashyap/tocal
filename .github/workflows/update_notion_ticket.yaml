@@ -5,4 +5,4 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Step 1
-        run: python3 update_notion_ticket.py
+        run: pwd && ls -al && cd .. && pwd && ls -al && cd .. && pwd && ls -al
