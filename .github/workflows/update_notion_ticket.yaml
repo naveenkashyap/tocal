@@ -5,4 +5,4 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Step 1
-        run: python3 .github/workflows/scripts/update_notion_ticket.py
+        run: python3 update_notion_ticket.py
