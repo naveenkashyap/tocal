@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 
 url = "https://api.notion.com/v1/databases/b7a15cb698a541ac897710f7c578dd56/query"
 
@@ -12,7 +13,7 @@ payload = json.dumps({
   }
 })
 headers = {
-  'Authorization': 'Bearer secret_GsPbngjCFPw1TQdfOqw1w88t5VdMxFuL56r7U5o6stI',
+  'Authorization': f'Bearer {os.getenv('your_token')}', #store your token in this environment variable name
   'Content-Type': 'application/json',
   'Notion-Version': '2021-05-13'
 }
